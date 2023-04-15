@@ -1,0 +1,5 @@
+tlqnsch=input().split(':')
+tl=tlqnsch[:2]
+qns=tlqnsch[2:4]
+ch=tlqnsch[4:]
+print(qns)
