@@ -1,0 +1,11 @@
+while True:
+  a=int(input('1.이름출력 2.주소출력 3. 끝내기'))
+  if a==1:
+    print("Kim")
+  elif a==2:
+    print("신흥 1동 6437번지")
+  elif a==3:
+    print("종료!")
+    break
+  else:
+    print("잘못입력하셨습니다.")
