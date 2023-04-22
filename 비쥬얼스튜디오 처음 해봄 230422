@@ -1,0 +1,16 @@
+package JAVA;
+
+public class HELLOWORLD{
+    
+    public static void main(String[] args){
+        boolean  b= false;
+        
+        if(!b){
+            System.out.println("하늘이 맑으면 밖에 나가자");
+        }else
+        System.out.println("비가 온다면 집에서 셔야지...ㅜㅠ");
+       
+
+    }
+
+}
