@@ -1,0 +1,5 @@
+a=int(input("몇 줄 까지 출력 해줄까?"))
+for i in range(1,a+1):
+  for j in range(i):
+    print("*",end="")
+  print()
