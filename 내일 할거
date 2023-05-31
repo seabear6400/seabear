@@ -1,0 +1,48 @@
+package asdghg;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Aafdbv {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Random rd = new Random();
+		
+		System.out.println("row?");
+		int rows = sc.nextInt();
+		
+		System.out.println("colum?");
+		int cols = sc.nextInt();
+		
+		int[][] arr = new int[rows][cols];
+		
+		rd.nextInt(rows*cols);
+		for(int i=0; i<arr.length;i++) {
+			
+			for(int j=0; j<arr[rows-1].length;j++) {
+				arr[i][j] = rd.nextInt(rows*cols)+1;
+				
+				for(int k=0; k<=i;k++) {
+					for(int l=0; l<=cols; l++) {
+						if(i==k && j==l)
+							continue;
+						if(arr[i][j]==arr[k][l]) 
+							j--;
+					}
+				}
+			}
+			
+		}
+		
+		for(int i=0; i<arr.length;i++) {
+			for(int j=0; j<arr[rows-1].length;j++) {
+				System.out.print(arr[i][j]+"  ");
+				
+			}
+			System.out.println();
+		}
+	}
+
+}
