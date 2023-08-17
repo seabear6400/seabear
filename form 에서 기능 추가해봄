@@ -1,0 +1,40 @@
+<!-- 느낌표 엔터 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>0817</title>
+</head>
+
+<!-- 주석(commet) : 컨트롤 + / -->
+
+<body>
+    <h1>멜론</h1>
+
+    <div>
+        <h2>노래</h2>
+        <ol>
+            <li><a href="https://www.youtube.com/watch?v=RROW1FvQjqA" target="_blank" title="알아 내 맘에 조용히"
+                    style="width: 100px">첫사랑</a></li>
+            <a href="https://www.youtube.com/watch?v=RROW1FvQjqA"><img src="../20198077.jpg" alt=""></a>
+            <li><a href="https://www.youtube.com/watch?v=f8JWs0PExe4" target="_blank" title="헤어지는 중"
+                    style="width: 100px">헤어지는 중</a></li>
+            <a href="https://www.youtube.com/watch?v=PrqBlVtliqs"></ahref><img src="../헤어지는주.jpg" alt=""></a>
+            <li><a href="https://www.youtube.com/watch?v=PrqBlVtliqs" target="_blank" title="연애중"
+                    style="width: 100px">연애중</a></li>
+            <a href="https://www.youtube.com/watch?v=PrqBlVtliqs"><img src="../열애중.jpg" alt=""></a>
+        </ol>
+    </div>
+
+    <form action="a.html">
+        아이디 : <input type="text" name="id">
+        <br>
+        비밀번호 : <input type="password" name="pw">
+        <br>
+        <input type="submit" value="로그인">
+    </form>
+
+</body>
+
+</html>
