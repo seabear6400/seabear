@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <style>
+  h2.solid {border-style: solid;}
+  h1.solid {border-style: solid;}
+  h1{
+      color: blue;
+    }
+  h2{
+      color: blue;
+    }
+body {
+  background-color: #FFE4C4;
+}
+</style>
+  <body>
+    <link href="style.css" rel="stylesheet">
+    <div class="header">
+      <div class="container">
+        <h1 class="solid">신가현의 특징</h1>
+        <p>사실 신가현에 대해 잘 모름 </p>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li>신가현의 생일</li>
+          <li>신가현의 친구들</li>
+          <li>현재 상황</li>
+          <li>신가현의 별명</li>
+          <li>신가현의 가족관계</li>
+          <li>신가현의 특징</li>
+          <li>신가현의 학력</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <h2 class="solid">신가현 생일</h2>
+        <p>신가현은 5월25일이다. 또한 방재의 날이기도 하다.</p>
+        <h2 class="solid">신가현의 친구들</h2>
+        <p>김성우, 김나은, 최인영, 정희수, 이소희, 김은서, 김유민,</p>
+        <p>박준희, 정서윤, 박주희, 이찬희, 황예원, 장아정, 도건</p>
+        <h2 class="solid">현재 상황</h2>
+        <p>검정고시를 봐야 해서 현재 공부중이다.</p>
+        <p>자기 자신은 공부를 못한다고 한다.</p>
+        <h2 class="solid">신가현의 별명</h2>
+        <p>별명으로는 신호월, 신라면, 신가, 곰돌이, 다람쥐 등이 있다.</p>
+        <h2 class="solid">신가현의 가족관계</h2>
+        <p>엄마,아빠,오빠,가현,콩이,하늘이,겨울이가 있다.</p>
+        <p>엄마와는 매우 사이가 좋다.또한 아빠와도 사이가 매우 좋은것으로 알려졌다.</p>
+        <p>오빠와는 매우 사이가 좋지 않은것으로 밝혀졌다.</p>
+        <p>또한 반려동물로 콩이,하늘이,겨울이가 있는데 ㅈㄴ 귀엽다.</p>
+        <h2 class="solid">신가현의 특징 중요도 100</h2>
+        <p>음악을 좋아한다. 왼쪽 검지손가락에 싸인팬으로 칠한 점이 있다!.</p>
+        <p>왼쪽 눈안에 포비가 누워 있다고 알려졌다.</p>
+        <p>내년 4월에 검정고시 시험을 본다. 다만 시험에 떨어지면...</p>
+        <p>바로 학교에 복귀하기로 하였다.</p>
+        <h2 class="solid">신가현의 학력</h2>
+         <li>성남중앙초 졸업</li>
+         <li>성일중 졸업</li>
+         <li>복정고 중퇴</li>
+      </div>
+    </div>
+  </body>
+</html>
