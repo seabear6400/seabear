@@ -1,0 +1,11 @@
+Q=[1,2,3]
+
+Q.append(4)
+Q.append(5)
+
+print(Q)
+
+Q.pop(0)
+Q.pop(0)
+
+print(Q)
