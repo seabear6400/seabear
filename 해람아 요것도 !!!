@@ -1,0 +1,37 @@
+from queue import Queue
+
+# 게임판을 생성합니다.
+board = [[0 for i in range(5)] for j in range(5)]
+
+# 큐를 생성합니다.
+queue = Queue()
+
+# 큐에 게임판의 숫자를 넣습니다.
+for i in range(5):
+    for j in range(5):
+        queue.put(board[i][j])
+
+# 게임을 시작합니다.
+while not queue.empty():
+    # 큐에서 숫자를 꺼냅니다.
+    num = queue.get()
+
+    # 숫자가 2인 경우, 숫자를 4로 바꿉니다.
+    if num == 2:
+        num = 4
+
+    # 숫자를 게임판에 놓습니다.
+    x = queue.get()
+    y = queue.get()
+    board[x][y] = num
+
+    # 게임판을 출력합니다.
+    for i in range(5):
+        print(' '.join(map(str, board[i])))
+
+    # 게임이 종료되었는지 확인합니다.
+    if not queue.empty():
+        continue
+
+    # 게임이 종료되었습니다.
+    print('Game Over!')
