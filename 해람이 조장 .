@@ -1,0 +1,60 @@
+import random
+
+def generate_secret_number():
+  """
+  3자리 숫자를 생성합니다.
+
+  Returns:
+    3자리 숫자
+  """
+  numbers = [i for i in range(10)]
+  random.shuffle(numbers)
+  return str(numbers[0]) + str(numbers[1]) + str(numbers[2])
+
+def get_guess():
+  """
+  사용자의 추측을 받습니다.
+
+  Returns:
+    사용자의 추측
+  """
+  while True:
+    print("숫자를 입력하세요. (예: 123)")
+    guess = input()
+    if len(guess) == 3 and all(c.isdigit() for c in guess):
+      return guess
+
+def count_strikes_and_balls(secret_number, guess):
+  """
+  비밀번호와 추측번호를 비교하여 스트라이크와 볼의 수를 계산합니다.
+
+  Args:
+    secret_number: 비밀번호
+    guess: 추측번호
+
+  Returns:
+    스트라이크 수, 볼 수
+  """
+  strikes = 0
+  balls = 0
+  for i in range(3):
+    if secret_number[i] == guess[i]:
+      strikes += 1
+    elif guess[i] in secret_number:
+      balls += 1
+  return strikes, balls
+
+def main():
+  secret_number = generate_secret_number()
+  guesses = 0
+  while True:
+    guess = get_guess()
+    strikes, balls = count_strikes_and_balls(secret_number, guess)
+    guesses += 1
+    print("스트라이크: {} 볼: {}".format(strikes, balls))
+    if strikes == 3:
+      print("축하합니다! {}번 만에 맞추셨습니다.".format(guesses))
+      break
+
+if __name__ == "__main__":
+  main()
